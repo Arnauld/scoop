@@ -1,0 +1,37 @@
+h2. SCOOP
+
+SCOOP stands for <b>S</b>imple <b>C</b>omposite <b>O</b>bject <b>O</b>riented <b>P</b>rogramming
+
+This is an experimental implementation of a simple COP framework initiated after looking at "AOP":http://en.wikipedia.org/wiki/Aspect-oriented_programming and "Qi4j":http://www.qi4j.org/. Implementation is based on "CgLib":http://cglib.sourceforge.net/ which allows to customize method invokation dispatching to corresponding mixin.
+
+h3. Design by Composition
+
+Essentially, it takes the concepts from Aspect Oriented Programming to the extreme: one implements each aspect as a separate object and then treat them as mixins which blend together into a meaningful composite.
+
+For a more complete explanation see "Qi4j Background":http://www.qi4j.org/160.html
+
+h3. Internal concepts and features
+
+* Interface based
+* Mixin composition: attempt to find the most efficient combinaisons of mixins to satisfy all interfaces required
+* Interceptor based: all methods call is transformed into a full interceptor based chain before invoking the implementing method (see "Using Java EE Interceptors":http://docs.oracle.com/javaee/6/tutorial/doc/gkeed.html and "Strut2 Interceptor":http://struts.apache.org/2.x/docs/interceptors.html)
+* Main idea is to transform a simple method call to a complete message passing channel before the method invoked (see "EIP messaging patterns":http://www.enterpriseintegrationpatterns.com/MessagingComponentsIntro.html)
+
+h3. Why an other framework? 
+
+# To learn about the internals and problematic COP raises and can solves
+# To have a well known (since home made and really small) framework to efficiently twist it, e.g. be able to transform any compatible call into an asynchronous one, or modify a method call workflow easily
+
+
+h2. Links
+
+* Qi4j is definitively the framework to look at: "Qi4j":http://www.qi4j.org/
+* "Class OP vs Object OP":https://twitter.com/#!/aloyer/status/162674882478481409
+* "Aspect Oriented Programming":http://en.wikipedia.org/wiki/Aspect-oriented_programming 
+** "Aspectj":http://www.eclipse.org/aspectj/
+** "Cglib":http://cglib.sourceforge.net/
+** "ASM":http://asm.ow2.org/
+* "Concept-Oriented Programming":http://conceptoriented.org/papers/CopInformalIntroduction.html
+
+h2. Samples
+
