@@ -1,9 +1,11 @@
 package org.technbolts.scoop.util;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -37,6 +39,10 @@ public class New {
 
     public static <T> HashSet<T> hashSet() {
         return new HashSet<T>();
+    }
+    
+    public static <T> TreeSet<T> treeSet(Comparator<T> comparator) {
+        return new TreeSet<T>(comparator);
     }
 
 }

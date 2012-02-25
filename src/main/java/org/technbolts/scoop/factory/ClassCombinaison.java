@@ -4,8 +4,12 @@ import java.util.List;
 
 import org.technbolts.scoop.util.Classes;
 
-public class ClassCombinaison {
-    
+public class ClassCombinaison implements Combinaison {
+
+    public static ClassCombinaison from(List<Class<?>> list) {
+        return new ClassCombinaison(list.toArray(new Class<?>[list.size()]));
+    }
+
     private final Class<?>[] values;
 
     public ClassCombinaison(Class<?>[] values) {
@@ -13,7 +17,7 @@ public class ClassCombinaison {
         this.values = values;
     }
     
-    public int count() {
+    public int size() {
         return values.length;
     }
 
@@ -23,11 +27,7 @@ public class ClassCombinaison {
     
     @Override
     public String toString() {
-        return Classes.toSimpleNames(values);
-    }
-
-    public static ClassCombinaison from(List<Class<?>> list) {
-        return new ClassCombinaison(list.toArray(new Class<?>[list.size()]));
+        return "ClassCombinaison [" + Classes.toSimpleNames(values) + "]";
     }
 
     public Class<?> valueAt(int i) {

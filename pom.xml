@@ -12,6 +12,8 @@
 		<functionaljava.version>3.0</functionaljava.version>
 		<slf4j.version>1.6.4</slf4j.version>
 		<logback.version>1.0.0</logback.version>
+		<guava.version>11.0.1</guava.version>
+		<joda-time.version>2.0</joda-time.version>
 	</properties>
 
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -36,7 +38,14 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>11.0.1</version>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>${joda-time.version}</version>
+			<scope>test</scope>
 		</dependency>
 
 		<!-- ~~~~~~~~~~~~~~~~ -->
@@ -96,6 +105,12 @@
 					<groupId>junit</groupId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.0</version>
 		</dependency>
 	</dependencies>
 

@@ -29,7 +29,7 @@ public class ImplementationCombinator {
         this.interfaces = unimplemented(superClass, interfaces);
         this.defaultComparator = new Comparator<ClassCombinaison>() {
             public int compare(ClassCombinaison c1, ClassCombinaison c2) {
-                return c2.count() - c1.count();
+                return c2.size() - c1.size();
             }
         };
     }
