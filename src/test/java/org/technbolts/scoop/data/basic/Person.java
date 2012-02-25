@@ -1,4 +1,4 @@
-package org.technbolts.scoop.data;
+package org.technbolts.scoop.data.basic;
 
 public class Person {
     private String firstName, lastName;

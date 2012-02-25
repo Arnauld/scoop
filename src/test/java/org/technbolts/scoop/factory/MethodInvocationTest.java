@@ -8,7 +8,7 @@ import static org.technbolts.scoop.util.Objects.o;
 import java.lang.reflect.Method;
 
 import org.technbolts.scoop.Interceptor;
-import org.technbolts.scoop.data.Person;
+import org.technbolts.scoop.data.basic.Person;
 import org.technbolts.scoop.factory.MethodInvocation;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
