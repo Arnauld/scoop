@@ -1,6 +1,6 @@
 package org.technbolts.scoop.factory;
 
-import static org.technbolts.scoop.util.Objects.o;
+import static org.technbolts.util.Objects.o;
 
 import java.util.Comparator;
 import java.util.List;
@@ -9,10 +9,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.technbolts.scoop.exception.MultipleMatchingCombinaisonsException;
 import org.technbolts.scoop.exception.NoCombinaisonMatchingException;
-import org.technbolts.scoop.util.Classes;
-import org.technbolts.scoop.util.CombinatorialPowerSet;
-import org.technbolts.scoop.util.CombinatorialPowerSet.Cb;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.Classes;
+import org.technbolts.util.CombinatorialPowerSet;
+import org.technbolts.util.New;
+import org.technbolts.util.CombinatorialPowerSet.Cb;
 
 public class ImplementationCombinator {
     

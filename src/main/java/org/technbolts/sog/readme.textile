@@ -1,0 +1,6 @@
+<b>S</b>imple <b>O</b>ject <b>G</b>raph
+
+
+Inspired from "SDO":http://en.wikipedia.org/wiki/Service_Data_Objects
+
+* "Introduction to Service Data Objects":http://www.ibm.com/developerworks/java/library/j-sdo/

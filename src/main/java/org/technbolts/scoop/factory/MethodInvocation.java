@@ -1,6 +1,6 @@
 package org.technbolts.scoop.factory;
 
-import static org.technbolts.scoop.util.Objects.o;
+import static org.technbolts.util.Objects.o;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

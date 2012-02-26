@@ -14,7 +14,7 @@ import org.hamcrest.Matcher;
 import org.technbolts.scoop.data.annotation.Constraint;
 import org.technbolts.scoop.data.annotation.Profiling;
 import org.technbolts.scoop.data.annotation.Tx;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.New;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

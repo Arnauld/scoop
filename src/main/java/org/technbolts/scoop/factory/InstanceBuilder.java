@@ -7,7 +7,7 @@ import net.sf.cglib.proxy.Enhancer;
 
 import org.technbolts.scoop.Interceptor;
 import org.technbolts.scoop.InterceptorRegistry;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.New;
 
 public class InstanceBuilder {
 

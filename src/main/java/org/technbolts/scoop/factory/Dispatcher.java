@@ -8,8 +8,8 @@ import java.util.Set;
 
 import org.technbolts.scoop.Interceptor;
 import org.technbolts.scoop.InterceptorRegistry;
-import org.technbolts.scoop.util.Methods;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.Methods;
+import org.technbolts.util.New;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;

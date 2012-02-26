@@ -3,7 +3,7 @@ package org.technbolts.scoop.data.basic;
 import java.util.Map;
 
 import org.technbolts.scoop.data.HasId;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.New;
 
 public class MemoryRepository implements Repository {
     

@@ -1,7 +1,7 @@
 package org.technbolts.scoop.factory;
 
-import org.technbolts.scoop.util.MethodSignatureBuilder;
-import org.technbolts.scoop.util.MethodView;
+import org.technbolts.util.MethodSignatureBuilder;
+import org.technbolts.util.MethodView;
 
 import fj.data.Array;
 import fj.data.List;

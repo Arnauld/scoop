@@ -3,9 +3,9 @@ package org.technbolts.scoop.factory;
 import static fj.function.Booleans.not;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.technbolts.scoop.testutil.hamcrest.IsInUsingComparator.isInUsingComparator;
-import static org.technbolts.scoop.util.MethodView.sameBaseClassAndMethodSignatureAs;
-import static org.technbolts.scoop.util.MethodView.viewOf;
+import static org.technbolts.testutil.hamcrest.IsInUsingComparator.isInUsingComparator;
+import static org.technbolts.util.MethodView.sameBaseClassAndMethodSignatureAs;
+import static org.technbolts.util.MethodView.viewOf;
 
 import java.util.Comparator;
 import java.util.Iterator;
@@ -18,9 +18,9 @@ import org.technbolts.scoop.data.basic.MemoryRepository;
 import org.technbolts.scoop.data.basic.NamedMemoryRepository;
 import org.technbolts.scoop.data.basic.Repository;
 import org.technbolts.scoop.factory.StructuralCombinator.Callback;
-import org.technbolts.scoop.util.Classes;
-import org.technbolts.scoop.util.MethodView;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.Classes;
+import org.technbolts.util.MethodView;
+import org.technbolts.util.New;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

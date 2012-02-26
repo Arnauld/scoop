@@ -2,7 +2,7 @@ package org.technbolts.scoop.factory;
 
 import static java.lang.reflect.Modifier.isPublic;
 import static java.lang.reflect.Modifier.isStatic;
-import static org.technbolts.scoop.util.Objects.o;
+import static org.technbolts.util.Objects.o;
 
 import java.lang.reflect.Method;
 import java.util.Comparator;
@@ -12,12 +12,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.technbolts.scoop.exception.MultipleMatchingCombinaisonsException;
 import org.technbolts.scoop.exception.NoCombinaisonMatchingException;
-import org.technbolts.scoop.util.CombinatorialPowerSet;
-import org.technbolts.scoop.util.CombinatorialPowerSet.Cb;
-import org.technbolts.scoop.util.Equals;
-import org.technbolts.scoop.util.MethodSignatureBuilder;
-import org.technbolts.scoop.util.MethodView;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.CombinatorialPowerSet;
+import org.technbolts.util.Equals;
+import org.technbolts.util.MethodSignatureBuilder;
+import org.technbolts.util.MethodView;
+import org.technbolts.util.New;
+import org.technbolts.util.CombinatorialPowerSet.Cb;
 
 import com.google.common.collect.ArrayListMultimap;
 

@@ -2,7 +2,7 @@ package org.technbolts.scoop.factory;
 
 import java.util.List;
 
-import org.technbolts.scoop.util.Classes;
+import org.technbolts.util.Classes;
 
 public class ClassCombinaison implements Combinaison {
 

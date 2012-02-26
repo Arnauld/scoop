@@ -3,7 +3,7 @@ package org.technbolts.scoop.factory;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.collection.IsArrayContaining.hasItemInArray;
-import static org.technbolts.scoop.util.Classes.toArray;
+import static org.technbolts.util.Classes.toArray;
 
 import java.util.List;
 
@@ -18,8 +18,8 @@ import org.technbolts.scoop.data.basic.NamedMemoryRepository;
 import org.technbolts.scoop.data.basic.Repository;
 import org.technbolts.scoop.exception.MultipleMatchingCombinaisonsException;
 import org.technbolts.scoop.factory.ImplementationCombinator.Callback;
-import org.technbolts.scoop.util.Classes;
-import org.technbolts.scoop.util.New;
+import org.technbolts.util.Classes;
+import org.technbolts.util.New;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

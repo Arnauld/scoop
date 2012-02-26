@@ -3,7 +3,7 @@ package org.technbolts.scoop.factory;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.technbolts.scoop.util.Objects.o;
+import static org.technbolts.util.Objects.o;
 
 import java.lang.reflect.Method;
 
